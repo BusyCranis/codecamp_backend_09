@@ -58,10 +58,52 @@ const coffee = [
     },
 ]
 
+const userList = [
+    {
+        email: "0",
+        personal: "0",
+        phone: "0",
+        prefer: "0"
+    },
+    {
+        email: "0",
+        personal: "0",
+        phone: "0",
+        prefer: "0"
+    },
+    {
+        email: "0",
+        personal: "0",
+        phone: "0",
+        prefer: "0"
+    },
+    {
+        email: "0",
+        personal: "0",
+        phone: "0",
+        prefer: "0"
+    },
+    {
+        email: "0",
+        personal: "0",
+        phone: "0",
+        prefer: "0"
+    },
+
+
+]
+
 
 app.get('/starbucks', (req, res) => {
     res.send({
         posts: coffee
+    })
+})
+
+
+app.get('/users', (req, res) => {
+    res.send({
+        posts: userList
     })
 })
 
